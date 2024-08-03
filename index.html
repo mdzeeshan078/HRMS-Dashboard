@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">
+            <h1>HRMS <span class="dash">Dashboard</span></h1>
+        </div>
+        <ul>
+            <!-- Sidebar Items -->
+            <li><span class="material-symbols-outlined">home</span>Home</li>
+            <li><span class="material-symbols-outlined">group</span>Employees</li>
+            <li><span class="material-symbols-outlined">query_stats</span>Performance</li>
+            <li><span class="material-symbols-outlined">pending_actions</span>Leave</li>
+            <li><span class="material-symbols-outlined">person_check</span>Attendance</li>
+            <li><span class="material-symbols-outlined">report</span>Report</li>
+            <li><span class="material-symbols-outlined">logout</span>Logout</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <!-- Topbar Content -->
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search..">
+                <img src="search.png" alt="Search Icon">
+            </div>
+        
+            <button>Add New</button>
+            <a href="#teams" class="header-link">My Teams</a> <!-- Added link to #teams -->
+            <div class="notifications">
+                <img src="notifications.png" alt="Notification Icon">
+            </div>
+            <div class="profile">
+                <img src="user.png" alt="Profile Picture">
+            </div>
+        </header>
+        <main>
+            <!-- Dashboard Stats -->
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>2007</h3>
+                    <p>Employee</p>
+                </div>
+                <div class="stat-item">
+                    <h3>101</h3>
+                    <p>Consultant</p>
+                </div>
+                <div class="stat-item">
+                    <h3>20</h3>
+                    <p>Manager</p>
+                </div>
+                <div class="stat-item">
+                    <h3>7</h3>
+                    <p>Executive</p>
+                </div>
+            </div>
+            <div class="content-sections">
+                <div class="employee-details">
+                    <h3>Employee Details<span class="view-b"> <button>View All</button></span></h3>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Department</th>
+                                <th>Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Stark</td>
+                                <td>App Developer</td>
+                                <td>IT</td>
+                                <td><button>View</button></td>
+                            </tr>
+                            <tr>
+                                <td>Steve</td>
+                                <td>Web Developer</td>
+                                <td>CS</td>
+                                <td><button>View</button></td>
+                            </tr>
+                            <tr>
+                                <td>Peter</td>
+                                <td>J-Engineer</td>
+                                <td>Civil</td>
+                                <td><button>View</button></td>
+                            </tr>
+                            <tr>
+                                <td>Johnson</td>
+                                <td>Web Designer</td>
+                                <td>IT</td>
+                                <td><button>View</button></td>
+                            </tr>
+                            <!-- Repeat similar rows -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="new-employees">
+                    <h3>New Employees<button>View All</button></h3>
+                    <ul>
+                        <li>
+                            <div class="profile-pic">
+                            </div>
+                            <span>Sam</span>
+                            <button>View</button>
+                        </li>
+                        <li>
+                            <div class="profile-pic"></div>
+                            <span>John</span>
+                            <button>View</button>
+                        </li>
+                        <li>
+                            <div class="profile-pic"></div>
+                            <span>Raj</span>
+                            <button>View</button>
+                        </li>
+                        <li>
+                            <div class="profile-pic"></div>
+                            <span>Farhan</span>
+                            <button>View</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <section class="teams" id="teams">
+        <div class="team-container">
+            <h2 class="title">Meet Our Teams</h2>
+            <div class="team-cards">
+                <div class="card">
+                    <div class="box">
+                        <img src="ibrar.jpg" alt="Ibrar jpg">
+                        <div class="text">Wasim Ibrar</div>
+                        <p>Md Wasim Ibrar: A second-year IT engineering student at Maulana Azad National Urdu University.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="zeeshan.png" alt="Zeeshan jpg">
+                        <div class="text">Md Zeeshan</div>
+                        <p>Md Zeeshan: A second-year CS engineering student at Maulana Azad National Urdu University.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="rafiya.png" alt="rafiya jpg">
+                        <div class="text">Rafiya Javed</div>
+                        <p>Rafiya Javed: A second-year IT engineering student at Maulana Azad National Urdu University.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
+
+

@@ -1,0 +1,410 @@
+/* Resetting browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background: #7dddec;
+    color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .brand {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff5b5b;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.sidebar .brand .dash {
+    color: #073744;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.sidebar ul li {
+    padding: 10px 40px 5px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.sidebar ul li:hover {
+    background: #ff7979;
+}
+
+.sidebar ul .logout {
+    margin-top: auto;
+    background: #376c6e;
+    color: white;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header input[type="text"] {
+    width: 200px;
+    padding: 10px;
+}
+
+header button {
+    padding: 10px 20px;
+    background: #ff5b5b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* for search icon */
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-container input[type="text"] {
+    padding-right: 30px;
+    width: 200px;
+}
+
+.search-container img {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+header .profile img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+main {
+    padding: 20px;
+}
+
+/* for team attachment */
+.header-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    background: #ff5b5b;
+    padding: 10px 20px;
+}
+
+.header-link:hover {
+    background: #1ee9e9;
+    color: black;
+}
+
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        text-align: center;
+    }
+
+    .main-content {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        visibility: hidden;
+    }
+
+    .content-sections {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .stat-item,
+    .employee-details,
+    .new-employees {
+        width: 100%;
+        height: auto;
+    }
+
+    .stats {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .team-cards {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .team-container {
+        height: auto;
+        width: 100%;
+    }
+
+    .box {
+        height: auto;
+    }
+}
+
+/* for notification icon */
+.notifications {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.notifications img,
+.profile img,
+.search-container img {
+    width: 20px;
+    height: auto;
+    vertical-align: left;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.stat-item h3 {
+    margin-bottom: 10px;
+}
+
+.content-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.employee-details {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 48%;
+}
+
+.employee-details h3 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 45px;
+}
+
+.employee-details h3 span {
+    border: none;
+    border: 2px;
+    border-width: 5px;
+}
+
+.employee-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employee-details table th,
+.employee-details table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.employee-details table button {
+    padding: 10px 20px;
+    background: #ff5b5b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.employee-details table button:hover {
+    background: #1ee9e9;
+    color: black;
+}
+
+.new-employees {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 48%;
+}
+
+.new-employees h3 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+
+.new-employees ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.new-employees ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.new-employees ul button {
+    padding: 10px 20px;
+    background: #ff5b5b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.new-employees ul button:hover {
+    background: #1ee9e9;
+    color: black;
+}
+
+.new-employees .profile-pic {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* teams section styling */
+.teams {
+    background-color: black;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 20px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 300px;
+    background: #7dddec;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.box {
+    padding: 20px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+p {
+    font-size: 14px;
+    color: black;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.teams .team-container .title {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .employee-details,
+    .new-employees {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .team-cards {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
